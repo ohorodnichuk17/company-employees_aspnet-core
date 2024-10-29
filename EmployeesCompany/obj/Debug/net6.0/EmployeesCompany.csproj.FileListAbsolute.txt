@@ -30,3 +30,8 @@
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/obj/Debug/net6.0/EmployeesCompany.pdb
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/obj/Debug/net6.0/EmployeesCompany.genruntimeconfig.cache
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/obj/Debug/net6.0/ref/EmployeesCompany.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Contracts.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/LoggerService.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/LoggerService.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Contracts.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/obj/Debug/net6.0/EmployeesCompany.sourcelink.json
