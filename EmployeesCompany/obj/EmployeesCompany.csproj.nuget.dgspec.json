@@ -99,6 +99,9 @@
               },
               "/Users/PC10/RiderProjects/CompanyEmployees/Repository/Repository.csproj": {
                 "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Repository/Repository.csproj"
+              },
+              "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj": {
+                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj"
               }
             }
           }
@@ -373,6 +376,149 @@
               "version": "[6.0.35, )"
             }
           },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj",
+        "projectName": "Service.Contracts",
+        "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj",
+        "packagesPath": "/Users/PC10/.nuget/packages/",
+        "outputPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/PC10/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.28, 6.0.28]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.203/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj",
+        "projectName": "Service",
+        "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj",
+        "packagesPath": "/Users/PC10/.nuget/packages/",
+        "outputPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/PC10/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/PC10/RiderProjects/CompanyEmployees/Contracts/Contracts.csproj": {
+                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Contracts/Contracts.csproj"
+              },
+              "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj": {
+                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",

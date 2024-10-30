@@ -508,6 +508,30 @@
         "runtime": {
           "bin/placeholder/Repository.dll": {}
         }
+      },
+      "Service/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Contracts": "1.0.0",
+          "Service.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.dll": {}
+        }
+      },
+      "Service.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Service.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.Contracts.dll": {}
+        }
       }
     }
   },
@@ -1130,6 +1154,16 @@
       "type": "project",
       "path": "../Repository/Repository.csproj",
       "msbuildProject": "../Repository/Repository.csproj"
+    },
+    "Service/1.0.0": {
+      "type": "project",
+      "path": "../Service/Service.csproj",
+      "msbuildProject": "../Service/Service.csproj"
+    },
+    "Service.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Service.Contracts/Service.Contracts.csproj",
+      "msbuildProject": "../Service.Contracts/Service.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1139,6 +1173,7 @@
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.35",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.29",
       "Repository >= 1.0.0",
+      "Service >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -1172,6 +1207,9 @@
             },
             "/Users/PC10/RiderProjects/CompanyEmployees/Repository/Repository.csproj": {
               "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Repository/Repository.csproj"
+            },
+            "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj": {
+              "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj"
             }
           }
         }

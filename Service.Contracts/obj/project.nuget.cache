@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "97LwnhxiZnJw3kDtbArtWn8BrUTA2DSajMxV+FLZbvEAH9z/wopn9Y9OFL1AClTfVD/8UIpEvgmPZaooWKEB2Q==",
+  "success": true,
+  "projectFilePath": "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj",
+  "expectedPackageFiles": [
+    "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
