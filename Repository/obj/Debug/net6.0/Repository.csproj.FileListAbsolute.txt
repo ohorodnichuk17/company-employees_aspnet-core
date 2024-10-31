@@ -14,3 +14,5 @@
 /Users/PC10/RiderProjects/CompanyEmployees/Repository/obj/Debug/net6.0/refint/Repository.dll
 /Users/PC10/RiderProjects/CompanyEmployees/Repository/obj/Debug/net6.0/Repository.pdb
 /Users/PC10/RiderProjects/CompanyEmployees/Repository/obj/Debug/net6.0/ref/Repository.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Repository/bin/Debug/net6.0/Contracts.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Repository/bin/Debug/net6.0/Contracts.pdb

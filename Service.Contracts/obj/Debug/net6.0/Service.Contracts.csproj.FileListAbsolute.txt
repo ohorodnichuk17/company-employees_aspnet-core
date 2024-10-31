@@ -1,0 +1,16 @@
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Service.Contracts.deps.json
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Service.Contracts.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Service.Contracts.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.AssemblyInfoInputs.cache
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.AssemblyInfo.cs
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.csproj.CoreCompileInputs.cache
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.sourcelink.json
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/refint/Service.Contracts.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/ref/Service.Contracts.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service.Contracts.csproj.AssemblyReference.cache
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service..DEC3DE55.Up2Date
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Shared.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Shared.pdb

@@ -1,9 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "s3Q3x9cx22xpsviK8g17YD+sfcoQAOF0N46hXEk5F3G1/O5nwCbIGKK1eSmbbtWiMk2oecg8b+BsCvCGK+F2lg==",
+  "dgSpecHash": "VsIamTgvYIpFNT3/rsgG+DxFNU/qljGfoD9ONxfst5ySuqt1rrsCdTCp5j8ASBTOpVwgvJTVf7BV/UM47j6+lQ==",
   "success": true,
   "projectFilePath": "/Users/PC10/RiderProjects/CompanyEmployees/Service/Service.csproj",
   "expectedPackageFiles": [
+    "/Users/PC10/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
     "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
   ],
