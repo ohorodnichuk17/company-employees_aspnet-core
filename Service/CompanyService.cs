@@ -1,9 +1,8 @@
-using System.Collections;
 using AutoMapper;
 using Contracts;
 using Entities.Exceptions;
 using Service.Contracts;
-using Shared.DataTransferObject;
+using Shared.DataTransferObjects;
 
 namespace Service;
 
