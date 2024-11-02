@@ -17,4 +17,10 @@ public class EmployeeRepository : RepositoryBase<Employee>, IEmployeeRepository
     public Employee GetEmployee(Guid companyId, Guid employeeId, bool trackChanges) =>
     FindByCondition(e => e.CompanyId.Equals(companyId) && e.Id.Equals(employeeId), trackChanges)
         .SingleOrDefault();
+
+    public void CreateEmployeeForCompany(Guid companyId, Employee employee)
+    {
+        employee.CompanyId = companyId;
+        Create(employee);
+    }
 }
