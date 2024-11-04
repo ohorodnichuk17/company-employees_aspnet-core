@@ -64,3 +64,6 @@
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Shared.dll
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Shared.pdb
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/AutoMapper.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.AspNetCore.JsonPatch.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Newtonsoft.Json.Bson.dll

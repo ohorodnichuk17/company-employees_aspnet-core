@@ -42,6 +42,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.JsonPatch": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
             "Microsoft.AspNetCore.Mvc.Core": {
               "target": "Package",
               "version": "[2.2.5, )"
@@ -191,6 +195,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -483,6 +491,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "/Users/PC10/RiderProjects/CompanyEmployees/Entities/Entities.csproj": {
+                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Entities/Entities.csproj"
+              },
               "/Users/PC10/RiderProjects/CompanyEmployees/Shared/Shared.csproj": {
                 "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Shared/Shared.csproj"
               }

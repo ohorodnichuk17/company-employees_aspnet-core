@@ -16,3 +16,5 @@
 /Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/obj/Debug/net6.0/CompanyE.FCF99C45.Up2Date
 /Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/Shared.dll
 /Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/Shared.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/Entities.dll
+/Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/Entities.pdb

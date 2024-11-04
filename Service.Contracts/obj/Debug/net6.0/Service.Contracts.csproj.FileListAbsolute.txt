@@ -14,3 +14,5 @@
 /Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/obj/Debug/net6.0/Service..DEC3DE55.Up2Date
 /Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Shared.dll
 /Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Shared.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Entities.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/bin/Debug/net6.0/Entities.pdb
