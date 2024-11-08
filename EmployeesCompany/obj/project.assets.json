@@ -1450,6 +1450,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "6.0.35",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.35",
           "Service.Contracts": "1.0.0"
         },
         "compile": {
@@ -4447,7 +4448,6 @@
     "net6.0": [
       "CompanyEmployees.Presentation >= 1.0.0",
       "LoggerService >= 1.0.0",
-      "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.35",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.35",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.35",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.29",
@@ -4506,10 +4506,6 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-            "target": "Package",
-            "version": "[6.0.35, )"
-          },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",

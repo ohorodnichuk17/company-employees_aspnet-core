@@ -10,7 +10,6 @@
         "dependencies": {
           "CompanyEmployees.Presentation": "1.0.0",
           "LoggerService": "1.0.0",
-          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.35",
           "Microsoft.EntityFrameworkCore.Design": "6.0.35",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.35",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.29",
@@ -723,6 +722,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.JsonPatch": "6.0.35",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
+          "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.35",
           "Service.Contracts": "1.0.0"
         },
         "runtime": {

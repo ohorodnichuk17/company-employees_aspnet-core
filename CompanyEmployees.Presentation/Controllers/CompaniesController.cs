@@ -72,7 +72,7 @@ public class CompaniesController : ControllerBase
    [HttpPut("{id:guid}")]
    public IActionResult UpdateCompany(Guid id, [FromBody] CompanyForUpdateDto company)
    {
-      if(company is null)
+      if(company is null)                                            
          return BadRequest("CompanyForUpdateDto object is null");
 
       if (!ModelState.IsValid)
