@@ -181,6 +181,9 @@
             "projectReferences": {
               "/Users/PC10/RiderProjects/CompanyEmployees/Entities/Entities.csproj": {
                 "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Entities/Entities.csproj"
+              },
+              "/Users/PC10/RiderProjects/CompanyEmployees/Shared/Shared.csproj": {
+                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Shared/Shared.csproj"
               }
             }
           }

@@ -14,3 +14,5 @@
 /Users/PC10/RiderProjects/CompanyEmployees/Contracts/bin/Debug/net6.0/Entities.pdb
 /Users/PC10/RiderProjects/CompanyEmployees/Contracts/obj/Debug/net6.0/Contracts.csproj.AssemblyReference.cache
 /Users/PC10/RiderProjects/CompanyEmployees/Contracts/obj/Debug/net6.0/Contracts.csproj.Up2Date
+/Users/PC10/RiderProjects/CompanyEmployees/Contracts/bin/Debug/net6.0/Shared.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Contracts/bin/Debug/net6.0/Shared.pdb

@@ -16,3 +16,5 @@
 /Users/PC10/RiderProjects/CompanyEmployees/LoggerService/obj/Debug/net6.0/ref/LoggerService.dll
 /Users/PC10/RiderProjects/CompanyEmployees/LoggerService/bin/Debug/net6.0/Entities.dll
 /Users/PC10/RiderProjects/CompanyEmployees/LoggerService/bin/Debug/net6.0/Entities.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/LoggerService/bin/Debug/net6.0/Shared.dll
+/Users/PC10/RiderProjects/CompanyEmployees/LoggerService/bin/Debug/net6.0/Shared.pdb
