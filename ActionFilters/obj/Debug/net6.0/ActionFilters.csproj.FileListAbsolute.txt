@@ -1,0 +1,13 @@
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/bin/Debug/net6.0/ActionFilters.deps.json
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/bin/Debug/net6.0/ActionFilters.dll
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/bin/Debug/net6.0/ActionFilters.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.csproj.AssemblyReference.cache
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.GeneratedMSBuildEditorConfig.editorconfig
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.AssemblyInfoInputs.cache
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.AssemblyInfo.cs
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.csproj.CoreCompileInputs.cache
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.sourcelink.json
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.dll
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/refint/ActionFilters.dll
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ActionFilters.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/Debug/net6.0/ref/ActionFilters.dll

@@ -1,3 +1,4 @@
+using ActionFilters;
 using Contracts;
 using EmployeesCompany.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
@@ -23,6 +24,7 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
 });
+builder.Services.AddScoped<ValidationFilterAttribute>();
 
 NewtonsoftJsonPatchInputFormatter GetJsonPatchInputFormatter() =>
     new ServiceCollection().AddLogging().AddMvc().AddNewtonsoftJson()

@@ -1,5 +1,7 @@
 using System.Runtime.Serialization;
 
+namespace Shared.DataTransferObjects;
+
 [DataContract]
 public record EmployeeDto
 {
