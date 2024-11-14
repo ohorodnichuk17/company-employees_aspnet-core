@@ -1229,12 +1229,18 @@
           "Microsoft.AspNetCore.Mvc": "2.2.0"
         },
         "runtime": {
-          "ActionFilters.dll": {}
+          "ActionFilters.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Entities/1.0.0": {
         "runtime": {
-          "Entities.dll": {}
+          "Entities.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Service.Contracts/1.0.0": {
@@ -1243,12 +1249,18 @@
           "Shared": "1.0.0"
         },
         "runtime": {
-          "Service.Contracts.dll": {}
+          "Service.Contracts.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Shared/1.0.0": {
         "runtime": {
-          "Shared.dll": {}
+          "Shared.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
