@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "LOZWGwbToQDrxWxnTlZOE+nrVmClWY+Hf3vT+SU5DoxnGfXBTY97+jbLMmyzuzq5UpfUu0ESLX9qd9wQF5MzVA==",
+  "dgSpecHash": "nElXi/NHqCE=",
   "success": true,
   "projectFilePath": "/Users/PC10/RiderProjects/CompanyEmployees/Shared/Shared.csproj",
   "expectedPackageFiles": [
-    "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+    "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

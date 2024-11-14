@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "+nofm8DEC9LREYk4OT6iHW3FlWq9eyx3aZi7pRCDw0YmjLDbA/ylTvjt4/YlXTPqjoBkKfxpRBrAIPbcl1t22A==",
+  "dgSpecHash": "1y++TuELf3Q=",
   "success": true,
   "projectFilePath": "/Users/PC10/RiderProjects/CompanyEmployees/LoggerService/LoggerService.csproj",
   "expectedPackageFiles": [
     "/Users/PC10/.nuget/packages/nlog/5.3.4/nlog.5.3.4.nupkg.sha512",
-    "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+    "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }

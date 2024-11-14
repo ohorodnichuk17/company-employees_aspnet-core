@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GSrPjobmUNibhIi58FDtvGOE+ZpDXoJiBvzutisfmoiPiWDVg7PiVBMpThFx1fjsMuLQEfWeJ55I5aZM94ygaA==",
+  "dgSpecHash": "xzCvgq57sgs=",
   "success": true,
   "projectFilePath": "/Users/PC10/RiderProjects/CompanyEmployees/Repository/Repository.csproj",
   "expectedPackageFiles": [
@@ -18,8 +18,8 @@
     "/Users/PC10/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "/Users/PC10/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
-    "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+    "/Users/PC10/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512"
   ],
   "logs": []
 }
