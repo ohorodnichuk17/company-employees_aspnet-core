@@ -78,3 +78,4 @@
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/EmployeesCompany.staticwebassets.endpoints.json
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/obj/Debug/net6.0/staticwebassets.build.endpoints.json
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/obj/Debug/net6.0/staticwebassets/msbuild.EmployeesCompany.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/System.Linq.Dynamic.Core.dll

@@ -10,7 +10,8 @@
         "dependencies": {
           "Contracts": "1.0.0",
           "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "6.0.35"
+          "Microsoft.EntityFrameworkCore": "6.0.35",
+          "System.Linq.Dynamic.Core": "1.4.8"
         },
         "runtime": {
           "Repository.dll": {}
@@ -150,6 +151,14 @@
           }
         }
       },
+      "System.Linq.Dynamic.Core/1.4.8": {
+        "runtime": {
+          "lib/net6.0/System.Linq.Dynamic.Core.dll": {
+            "assemblyVersion": "1.4.8.0",
+            "fileVersion": "1.4.8.0"
+          }
+        }
+      },
       "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
       "Contracts/1.0.0": {
         "dependencies": {
@@ -277,6 +286,13 @@
       "sha512": "sha512-KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
       "path": "system.diagnostics.diagnosticsource/6.0.1",
       "hashPath": "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512"
+    },
+    "System.Linq.Dynamic.Core/1.4.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-PJnIOPdz18YJjMPyHkBI5knqQHNWR1bKVkX+c11sauOVnTVyBDjHSaExZexlwFuWT1q6wkg2UTfmFKloNfANvQ==",
+      "path": "system.linq.dynamic.core/1.4.8",
+      "hashPath": "system.linq.dynamic.core.1.4.8.nupkg.sha512"
     },
     "System.Runtime.CompilerServices.Unsafe/6.0.0": {
       "type": "package",

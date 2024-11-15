@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hSlEsUuepQE=",
+  "dgSpecHash": "ItTb89N7NKE=",
   "success": true,
   "projectFilePath": "/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/EmployeesCompany.csproj",
   "expectedPackageFiles": [
@@ -130,6 +130,7 @@
     "/Users/PC10/.nuget/packages/system.io.filesystem/4.3.0/system.io.filesystem.4.3.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/system.io.filesystem.primitives/4.3.0/system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/system.linq/4.3.0/system.linq.4.3.0.nupkg.sha512",
+    "/Users/PC10/.nuget/packages/system.linq.dynamic.core/1.4.8/system.linq.dynamic.core.1.4.8.nupkg.sha512",
     "/Users/PC10/.nuget/packages/system.linq.expressions/4.3.0/system.linq.expressions.4.3.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/system.objectmodel/4.3.0/system.objectmodel.4.3.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/system.reflection/4.3.0/system.reflection.4.3.0.nupkg.sha512",
