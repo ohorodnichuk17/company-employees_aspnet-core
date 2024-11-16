@@ -4,81 +4,6 @@
     "/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/EmployeesCompany.csproj": {}
   },
   "projects": {
-    "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/ActionFilters.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/ActionFilters.csproj",
-        "projectName": "ActionFilters",
-        "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/ActionFilters.csproj",
-        "packagesPath": "/Users/PC10/.nuget/packages/",
-        "outputPath": "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/PC10/.nuget/NuGet/NuGet.Config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.AspNetCore.Mvc": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.36, 6.0.36]"
-            }
-          ],
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.100/RuntimeIdentifierGraph.json"
-        }
-      }
-    },
     "/Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/CompanyEmployees.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -101,9 +26,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/ActionFilters.csproj": {
-                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/ActionFilters.csproj"
-              },
               "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj": {
                 "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Service.Contracts/Service.Contracts.csproj"
               }
@@ -267,9 +189,6 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/ActionFilters.csproj": {
-                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/ActionFilters/ActionFilters.csproj"
-              },
               "/Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/CompanyEmployees.Presentation.csproj": {
                 "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/CompanyEmployees.Presentation.csproj"
               },
@@ -380,7 +299,11 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/PC10/RiderProjects/CompanyEmployees/Shared/Shared.csproj": {
+                "projectPath": "/Users/PC10/RiderProjects/CompanyEmployees/Shared/Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -398,6 +321,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -10,3 +10,7 @@
 /Users/PC10/RiderProjects/CompanyEmployees/Entities/obj/Debug/net6.0/refint/Entities.dll
 /Users/PC10/RiderProjects/CompanyEmployees/Entities/obj/Debug/net6.0/Entities.pdb
 /Users/PC10/RiderProjects/CompanyEmployees/Entities/obj/Debug/net6.0/ref/Entities.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Entities/bin/Debug/net6.0/Shared.dll
+/Users/PC10/RiderProjects/CompanyEmployees/Entities/bin/Debug/net6.0/Shared.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/Entities/obj/Debug/net6.0/Entities.csproj.AssemblyReference.cache
+/Users/PC10/RiderProjects/CompanyEmployees/Entities/obj/Debug/net6.0/Entities.csproj.Up2Date

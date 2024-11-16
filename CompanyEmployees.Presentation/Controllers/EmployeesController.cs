@@ -1,7 +1,8 @@
-using ActionFilters;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using CompanyEmployees.Presentation.ActionFilters;
+using Entities.LinkModels;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 using Shared.RequestFeatures;
@@ -17,19 +18,22 @@ public class EmployeesController : ControllerBase
    public EmployeesController(IServiceManager service) => _service = service;
 
    [HttpGet]
-   public async Task<IActionResult> GetEmployeesForCompanyAsync(Guid companyId,
-      [FromQuery] EmployeeParameters employeeParameters)
+   [Produces("application/vnd.codemaze.hateoas+json")]
+   [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
+   public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, [FromQuery] EmployeeParameters employeeParameters)
    {
-      var pagedResult = await _service.EmployeeService
-         .GetEmployeesAsync(companyId, employeeParameters, trackChanges: false);
-      
-      Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(pagedResult.metaData));
+      var linkParams = new LinkParameters(employeeParameters, HttpContext);
+      var result = await _service.EmployeeService.GetEmployeesAsync(companyId, linkParams, trackChanges: false);
+      Response.Headers.Add("X-Pagination", JsonSerializer.Serialize(result.metaData));
 
-      return Ok(pagedResult.employees);
+      return result.linkResponse.HasLinks 
+         ? Ok(result.linkResponse.LinkedEntities) 
+         : Ok(result.linkResponse.ShapedEntities);
    }
 
+
    [HttpGet("{id:guid}", Name = "GetEmployeeForCompany")]
-   public async Task<IActionResult> GetEmployeeAsync(Guid companyId, Guid id)
+   public async Task<IActionResult> GetEmployeeForCompany(Guid companyId, Guid id)
    {
       var employee = await 
          _service.EmployeeService.GetEmployeeAsync(companyId, id, trackChanges: false);
@@ -54,7 +58,7 @@ public class EmployeesController : ControllerBase
    }
 
    [HttpDelete("{employeeId:guid}")]
-   public async Task<IActionResult> DeleteEmployeeAsync(Guid companyId, Guid employeeId)
+   public async Task<IActionResult> DeleteEmployeeForCompany(Guid companyId, Guid employeeId)
    {
       await _service.EmployeeService.DeleteEmployeeAsync(companyId, employeeId, trackChanges: false);
 
@@ -63,7 +67,7 @@ public class EmployeesController : ControllerBase
 
    [HttpPut("{id:guid}")]
    [ServiceFilter(typeof(ValidationFilterAttribute))]
-   public async Task<IActionResult> UpdateEmployeeForCompanyAsync(Guid companyId, Guid id, [FromBody] EmployeeForUpdateDto employee)
+   public async Task<IActionResult> UpdateEmployeeForCompany(Guid companyId, Guid id, [FromBody] EmployeeForUpdateDto employee)
    {
       await _service.EmployeeService.UpdateEmployeeForCompanyAsync(companyId, id, 
          employee, compTrackChanges: false, empTrackChanges: true);
@@ -72,7 +76,7 @@ public class EmployeesController : ControllerBase
    }
 
    [HttpPatch("{id:guid}")]
-   public async Task<IActionResult> PartiallyUpdateEmployeeForCompanyAsync(Guid companyId, Guid id,
+   public async Task<IActionResult> PartiallyUpdateEmployeeForCompany(Guid companyId, Guid id,
       [FromBody] JsonPatchDocument<EmployeeForUpdateDto> patchDoc)
    {
       if (patchDoc is null)
