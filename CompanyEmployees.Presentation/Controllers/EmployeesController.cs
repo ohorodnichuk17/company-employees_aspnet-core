@@ -18,6 +18,7 @@ public class EmployeesController : ControllerBase
    public EmployeesController(IServiceManager service) => _service = service;
 
    [HttpGet]
+   [HttpHead]
    [Produces("application/vnd.codemaze.hateoas+json")]
    [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
    public async Task<IActionResult> GetEmployeesForCompany(Guid companyId, [FromQuery] EmployeeParameters employeeParameters)
