@@ -14,8 +14,8 @@ public class CompaniesController : ControllerBase
 
    public CompaniesController(IServiceManager service) => _service = service;
 
-   [HttpGet]
-   public async Task<IActionResult> GetCompaniesAsync()
+   [HttpGet (Name = "GetCompanies")]
+   public async Task<IActionResult> GetCompanies()
    {
       var companies = await _service.CompanyService.GetAllCompaniesAsync(trackChanges: false);
 
@@ -30,7 +30,7 @@ public class CompaniesController : ControllerBase
    }
 
    [HttpGet("collection/({ids})", Name = "CompanyCollection")]
-   public async Task<IActionResult> GetCompanyCollectionAsync([ModelBinder(BinderType = typeof(ArrayModelBinder))]
+   public async Task<IActionResult> GetCompanyCollection([ModelBinder(BinderType = typeof(ArrayModelBinder))]
         IEnumerable<Guid> ids)
    {
       var companies = await _service.CompanyService.GetByIdsAsync(ids, trackChanges: false);
@@ -38,9 +38,9 @@ public class CompaniesController : ControllerBase
       return Ok(companies);
    }
 
-   [HttpPost]
+   [HttpPost(Name = "CreateCompany")]
    [ServiceFilter(typeof(ValidationFilterAttribute))]
-   public async Task<IActionResult> CreateCompanyAsync([FromBody] CompanyForCreationDto company)
+   public async Task<IActionResult> CreateCompany([FromBody] CompanyForCreationDto company)
    {
       var createdCompany = await _service.CompanyService.CreateCompanyAsync(company);
 
@@ -50,7 +50,7 @@ public class CompaniesController : ControllerBase
    }
 
    [HttpPost("collection")]
-   public async Task<IActionResult> CreateCompanyCollectionAsync(
+   public async Task<IActionResult> CreateCompanyCollection(
       [FromBody] IEnumerable<CompanyForCreationDto> companyCollection)
    {
       var result = await _service.CompanyService.CreateCompanyCollectionAsync(companyCollection);
@@ -59,7 +59,7 @@ public class CompaniesController : ControllerBase
    }
 
    [HttpDelete("{id:guid}")]
-   public async Task<IActionResult> DeleteCompanyAsync(Guid id)
+   public async Task<IActionResult> DeleteCompany(Guid id)
    {
       await _service.CompanyService.DeleteCompanyAsync(id, trackChanges: false);
 
@@ -68,7 +68,7 @@ public class CompaniesController : ControllerBase
 
    [HttpPut("{id:guid}")]
    [ServiceFilter(typeof(ValidationFilterAttribute))]
-   public async Task<IActionResult> UpdateCompanyAsync(Guid id, [FromBody] CompanyForUpdateDto company)
+   public async Task<IActionResult> UpdateCompany(Guid id, [FromBody] CompanyForUpdateDto company)
    {
       await _service.CompanyService.UpdateCompanyAsync(id, company, trackChanges: true);
 
