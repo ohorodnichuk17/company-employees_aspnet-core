@@ -1,7 +1,9 @@
+using CompanyEmployees.Presentation.Controllers;
 using Contracts;
 using LoggerService;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Repository;
 using Service;
@@ -44,29 +46,6 @@ public static class ServiceExtensions
         builder.AddMvcOptions(config => config.OutputFormatters.Add(new
             CsvOutputFormatter()));
 
-    // public static void AddCustomMediaTypes(this IServiceCollection services)
-    // {
-    //     services.Configure<MvcOptions>(config =>
-    //     {
-    //         var systemTextJsonOutputFormatter = config.OutputFormatters
-    //             .OfType<SystemTextJsonOutputFormatter>()?.FirstOrDefault();
-    //
-    //         if (systemTextJsonOutputFormatter != null)
-    //         {
-    //             systemTextJsonOutputFormatter.SupportedMediaTypes.Add("application/vnd.codemaze.hateoas+json");
-    //         }
-    //
-    //         var xmlOutputFormatter = config.OutputFormatters
-    //             .OfType<XmlDataContractSerializerOutputFormatter>()?
-    //             .FirstOrDefault();
-    //
-    //         if (xmlOutputFormatter != null)
-    //         {
-    //             xmlOutputFormatter.SupportedMediaTypes.Add("application/vnd.codemaze.hateoas+xml");
-    //         }
-    //     });
-    // }
-
     public static void AddCustomMediaTypes(this IServiceCollection services)
     {
         services.Configure<MvcOptions>(config =>
@@ -92,6 +71,21 @@ public static class ServiceExtensions
                 xmlOutputFormatter.SupportedMediaTypes
                     .Add("application/vnd.codemaze.apiroot+xml");
             }
+        });
+    }
+
+    public static void ConfigureVersioning(this IServiceCollection services)
+    {
+        services.AddApiVersioning(opt =>
+        {
+            opt.ReportApiVersions = true;
+            opt.AssumeDefaultVersionWhenUnspecified = true;
+            opt.DefaultApiVersion = new ApiVersion(1, 0);
+            opt.ApiVersionReader = new HeaderApiVersionReader("api-version");
+            opt.Conventions.Controller<CompaniesController>()
+                .HasApiVersion(new ApiVersion(1, 0));
+            opt.Conventions.Controller<CompaniesV2Controller>()
+                .HasApiVersion(new ApiVersion(2, 0));
         });
     }
 }
