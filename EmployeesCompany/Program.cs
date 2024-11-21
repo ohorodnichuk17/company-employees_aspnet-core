@@ -1,3 +1,4 @@
+using AspNetCoreRateLimit;
 using CompanyEmployees.Presentation.ActionFilters;
 using Contracts;
 using EmployeesCompany.Extensions;
@@ -27,6 +28,9 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureVersioning();
 builder.Services.ConfigureResponseCaching();
 builder.Services.ConfigureHttpCacheHeaders();
+builder.Services.AddMemoryCache();
+builder.Services.ConfigureRateLimitingOptions();
+builder.Services.AddHttpContextAccessor();
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
     options.SuppressModelStateInvalidFilter = true;
@@ -72,9 +76,10 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
     ForwardedHeaders = ForwardedHeaders.All
 });
 
+// app.UseResponseCaching();
+// app.UseHttpCacheHeaders();
+app.UseIpRateLimiting();
 app.UseCors("CorsPolicy");
-app.UseResponseCaching();
-app.UseHttpCacheHeaders();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

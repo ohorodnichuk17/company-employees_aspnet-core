@@ -73,3 +73,4 @@
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/System.Linq.Dynamic.Core.dll
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.AspNetCore.Mvc.Versioning.dll
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Marvin.Cache.Headers.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/AspNetCoreRateLimit.dll
