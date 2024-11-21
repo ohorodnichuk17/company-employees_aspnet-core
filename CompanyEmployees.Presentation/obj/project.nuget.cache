@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "9DD+NeqUNbk=",
+  "dgSpecHash": "KUVLZRAp4lM=",
   "success": true,
   "projectFilePath": "/Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/CompanyEmployees.Presentation.csproj",
   "expectedPackageFiles": [
+    "/Users/PC10/.nuget/packages/marvin.cache.headers/7.2.0/marvin.cache.headers.7.2.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "/Users/PC10/.nuget/packages/microsoft.aspnetcore.authorization/2.2.0/microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
