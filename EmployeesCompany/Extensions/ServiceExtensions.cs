@@ -144,11 +144,18 @@ public static class ServiceExtensions
         .AddEntityFrameworkStores<RepositoryContext>()
         .AddDefaultTokenProviders();
     }
-
+    
     public static void ConfigureJWT(this IServiceCollection services, IConfiguration configuration)
     {
         var jwtSettings = configuration.GetSection("JwtSettings");
-        var secretKey = Environment.GetEnvironmentVariable("SECRET");
+    
+        var secretKey = configuration["SECRET"];
+        Console.WriteLine($"SECRET: {secretKey}");
+
+        if (string.IsNullOrEmpty(secretKey))
+        {
+            throw new ArgumentNullException(nameof(secretKey), "Secret key is missing or empty.");
+        }
 
         services.AddAuthentication(opt =>
             {
@@ -169,4 +176,5 @@ public static class ServiceExtensions
                 };
             });
     }
+
 }

@@ -79,3 +79,11 @@
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
