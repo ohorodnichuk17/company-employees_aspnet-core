@@ -150,7 +150,7 @@ public static class ServiceExtensions
         var jwtSettings = configuration.GetSection("JwtSettings");
     
         var secretKey = configuration["SECRET"];
-        Console.WriteLine($"SECRET: {secretKey}");
+        // Console.WriteLine($"SECRET: {secretKey}");
 
         if (string.IsNullOrEmpty(secretKey))
         {
