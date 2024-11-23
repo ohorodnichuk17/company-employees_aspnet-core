@@ -11588,3 +11588,21 @@
 2024-11-23 15:18:26.1612 Trace FileTarget(Name=logfile) has 2 layouts
 2024-11-23 15:18:26.1623 Trace FileTarget(Name=logfile): Using appenderFactory: NLog.Internal.FileAppenders.SingleProcessFileAppender+Factory
 2024-11-23 15:18:26.1629 Info Configuration initialized.
+2024-11-23 15:29:23.0518 Info AppDomain Shutting down. LogFactory closing...
+2024-11-23 15:29:23.0553 Debug Stop watching file-filter 'nlog.config' in directory: /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany
+2024-11-23 15:29:23.0612 Debug Closing logging configuration...
+2024-11-23 15:29:23.0625 Trace Closing FileTarget(Name=logfile)
+2024-11-23 15:29:23.0641 Debug FileTarget(Name=logfile): Closing...
+2024-11-23 15:29:23.0671 Debug FileTarget(Name=logfile): Closed.
+2024-11-23 15:29:23.0671 Trace Closing .\logs\${shortdate}_logfile.txt
+2024-11-23 15:29:23.0684 Trace Closing Layout Renderer: ${literal}
+2024-11-23 15:29:23.0688 Trace Closing Layout Renderer: ${shortdate}
+2024-11-23 15:29:23.0688 Trace Closing Layout Renderer: ${literal}
+2024-11-23 15:29:23.0688 Trace Closing ${longdate} ${level:uppercase=true} ${message}
+2024-11-23 15:29:23.0688 Trace Closing Layout Renderer: ${longdate}
+2024-11-23 15:29:23.0688 Trace Closing Layout Renderer: ${literal}
+2024-11-23 15:29:23.0688 Trace Closing Layout Renderer: ${level}
+2024-11-23 15:29:23.0688 Trace Closing Layout Renderer: ${literal}
+2024-11-23 15:29:23.0688 Trace Closing Layout Renderer: ${message}
+2024-11-23 15:29:23.0688 Debug Finished closing logging configuration.
+2024-11-23 15:29:23.0688 Info LogFactory has been closed.
