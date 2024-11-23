@@ -78,6 +78,8 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
     ForwardedHeaders = ForwardedHeaders.All
 });
 
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+
 // app.UseResponseCaching();
 // app.UseHttpCacheHeaders();
 app.UseIpRateLimiting();
