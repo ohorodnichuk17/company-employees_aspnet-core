@@ -18,3 +18,4 @@
 /Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/Shared.pdb
 /Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/Entities.dll
 /Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/Entities.pdb
+/Users/PC10/RiderProjects/CompanyEmployees/CompanyEmployees.Presentation/bin/Debug/net6.0/CompanyEmployees.Presentation.xml

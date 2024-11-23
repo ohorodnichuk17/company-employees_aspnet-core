@@ -92,3 +92,4 @@
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.Extensions.Configuration.Binder.dll
 /Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/Microsoft.Extensions.Primitives.dll
+/Users/PC10/RiderProjects/CompanyEmployees/EmployeesCompany/bin/Debug/net6.0/CompanyEmployees.Presentation.xml
