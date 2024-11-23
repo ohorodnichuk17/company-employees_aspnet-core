@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using System.Text;
 using AutoMapper;
 using Contracts;
+using Entities.Exceptions;
 using Entities.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -73,6 +74,20 @@ internal sealed class AuthenticationService : IAuthenticationService
         var accessToken = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
 
         return new TokenDto(accessToken, refreshToken);
+    }
+
+    public async Task<TokenDto> RefreshToken(TokenDto tokenDto)
+    {
+        var principal = GetPrincipalFromExpiredToken(tokenDto.AccessToken);
+
+        var user = await _userManager.FindByNameAsync(principal.Identity.Name);
+        if (user == null || user.RefreshToken != tokenDto.RefreshToken ||
+            user.RefreshTokenExpiryTime <= DateTime.Now)
+            throw new RefreshTokenBadRequest();
+
+        _user = user;
+        
+        return await CreateToken(populateExp: false);
     }
 
     private SigningCredentials GetSigningCredentials()
