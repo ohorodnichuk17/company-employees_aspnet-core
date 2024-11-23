@@ -12,6 +12,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using Entities.ConfigurationModels;
+using Microsoft.Extensions.Options;
 
 namespace Service;
 
@@ -20,20 +21,19 @@ internal sealed class AuthenticationService : IAuthenticationService
     private readonly ILoggerManager _logger;
     private readonly IMapper _mapper;
     private readonly UserManager<User> _userManager;
-    private readonly IConfiguration _configuration;
+    private readonly IOptions<JwtConfiguration> _configuration;
     private readonly JwtConfiguration _jwtConfiguration;
 
     private User? _user;
 
     public AuthenticationService(ILoggerManager logger, IMapper mapper,
-        UserManager<User> userManager, IConfiguration configuration)
+        UserManager<User> userManager, IOptions<JwtConfiguration> configuration)
     {
         _logger = logger;
         _mapper = mapper;
         _userManager = userManager;
         _configuration = configuration;
-        _jwtConfiguration = new JwtConfiguration();
-        _configuration.Bind(_jwtConfiguration.Section, _jwtConfiguration);
+        _jwtConfiguration = _configuration.Value;
     }
     
     public async Task<IdentityResult> RegisterUser(UserForRegistrationDto userForRegistration)
@@ -95,7 +95,7 @@ internal sealed class AuthenticationService : IAuthenticationService
 
     private SigningCredentials GetSigningCredentials()
     {
-        var key = _configuration["SECRET"];
+        var key = _jwtConfiguration.Secret;
 
         var secret = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key));
         
@@ -120,8 +120,6 @@ internal sealed class AuthenticationService : IAuthenticationService
 
     private JwtSecurityToken GenerateTokenOptions(SigningCredentials signingCredentials, List<Claim> claims)
     {
-        var jwtSettings = _configuration.GetSection("JwtSettings");
-
         var tokenOptions = new JwtSecurityToken
         (
             issuer: _jwtConfiguration.ValidIssuer,
@@ -146,7 +144,7 @@ internal sealed class AuthenticationService : IAuthenticationService
 
     private ClaimsPrincipal GetPrincipalFromExpiredToken(string token)
     {
-        var key = _configuration["SECRET"];
+        var key = _jwtConfiguration.Secret;
         
         var tokenValidationParameters = new TokenValidationParameters
         {

@@ -178,4 +178,6 @@ public static class ServiceExtensions
             });
     }
 
+    public static void AddJwtConfiguration(this IServiceCollection services, IConfiguration configuration) =>
+        services.Configure<JwtConfiguration>(configuration.GetSection("JwtSettings"));
 }
