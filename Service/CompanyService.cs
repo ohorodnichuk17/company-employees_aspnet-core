@@ -2,6 +2,7 @@ using AutoMapper;
 using Contracts;
 using Entities.Exceptions;
 using Entities.Models;
+using Entities.Responses;
 using Service.Contracts;
 using Shared.DataTransferObjects;
 
@@ -20,7 +21,7 @@ internal sealed class CompanyService : ICompanyService
       _mapper = mapper;
    }
 
-   public async Task<IEnumerable<CompanyDto>> GetAllCompaniesAsync(bool trackChanges)
+   public async Task<ApiBaseResponse> GetAllCompaniesAsync(bool trackChanges)
    {
       var companies = await _repository.Company.GetAllCompaniesAsync(trackChanges);
 
@@ -28,16 +29,18 @@ internal sealed class CompanyService : ICompanyService
       //     new CompanyDto(c.Id, c.Name ?? "", string.Join(' ', c.Address, c.Country))).ToList();
       var companiesDto = _mapper.Map<IEnumerable<CompanyDto>>(companies);
 
-      return companiesDto;
+      return new ApiOkResponse<IEnumerable<CompanyDto>>(companiesDto);
    }
 
-   public async Task<CompanyDto> GetCompanyAsync(Guid companyId, bool trackChanges)
+   public async Task<ApiBaseResponse> GetCompanyAsync(Guid companyId, bool trackChanges)
    {
       var company = await GetCompanyAndCheckIfItExists(companyId, trackChanges);
+      if (company is null)
+         return new CompanyNotFoundResponse(companyId);
 
       var companyDto = _mapper.Map<CompanyDto>(company);
 
-      return companyDto;
+      return new ApiOkResponse<CompanyDto>(companyDto);
    }
 
    public async Task<CompanyDto> CreateCompanyAsync(CompanyForCreationDto company)
